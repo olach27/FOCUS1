@@ -24,7 +24,8 @@
   }
   
   .movie img {
-    width: 100%;  /* Make the image fill the block */
+    width: 200px; 
+    height: 250px;   /* Make the image fill the block */
     border-radius: 8px;  /* Rounded corners for the poster */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Subtle shadow for the image */
   }
