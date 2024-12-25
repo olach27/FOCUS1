@@ -1,0 +1,35 @@
+/* Search Bar Container */
+.search-bar-container {
+    display: flex;
+    justify-content: center; /* Center the search bar */
+    align-items: center;
+    margin: 312px 0; /* Add some spacing from the top of the page */
+  }
+  
+  /* Styling the input (search bar) */
+  .search-bar {
+    width: 50%; /* Make the search bar 50% of the page width */
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 2px solid #ccc; /* Light border */
+    outline: none;
+  }
+  
+  /* Styling the search button */
+  .search-button {
+    padding: 12px 25px;
+    margin-left: 10px; /* Space between input and button */
+    background-color: #181818; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-button:hover {
+    background-color: #090909; /* Darken the button on hover */
+  }
+  
+
