@@ -1,0 +1,69 @@
+/* Style de base */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('arcane background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top top;
+ 
+   
+}
+
+/* Barre de navigation */
+.navbar {
+    background-color: rgba(200, 200, 200, 0.852);
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et les éléments */
+    align-items: center; /* Centre verticalement */
+    padding: 10px 20px; /* Espacement interne */
+}
+
+/* Conteneur pour aligner les éléments */
+.container {
+    display: flex;
+    justify-content: space-between; /* Espace entre logo et liens */
+    align-items: center; /* Centre verticalement */
+    width: 100%;
+}
+
+/* Style des liens */
+.navbar-nav {
+    display: flex; /* Alignement horizontal des liens */
+    gap: 20px; /* Espacement entre les liens */
+}
+
+.nav-item {
+    color: #000000; 
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-item:hover {
+    text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+/* Logo */
+.navbar-brand img {
+    display: block;
+    max-width: 100px; /* Taille maximale pour le logo */
+    height: auto; /* Ajuste automatiquement la hauteur */
+}
+/* Navigation centered with spacing */
+.navbar-center {
+    display: flex;
+    justify-content: center; /* Aligns items at the center */
+    flex-grow: 1; /* Ensures it stretches to center properly */
+    gap: 100px; /* Adjust the space between Movies and TV Shows */
+}
+footer { 
+    position: relative;
+    width: 100%;
+    bottom: 0%;
+    padding: 10px;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+}
