@@ -14,28 +14,33 @@
   <header>
     <nav class="navbar">
         <div class="container">
-            <!-- Logo à gauche -->
-            <a class="navbar-brand" href="#" onclick="refreshPage()">
+            
+            <a class="navbar-brand" href="FOCUS.html">
               <img src="focus.png" width="100" height="100" alt="logo">
             </a>
-            <!-- Éléments centrés -->
+          
             <div class="navbar-center">
                 <a class="nav-item" href="movies.html">Movies</a>
                 <a class="nav-item" href="tvshows.html" >TV Shows</a>
             </div>
-            <!-- Login à droite -->
+           
             <div class="navbar-right">
                 <a class="nav-item" href="login.html" target="_blank">Login</a>
             </div>
         </div>
     </nav>        
   </header>
+  
   <div class="search-bar-container">
-    <input type="text" class="search-bar" placeholder="Search for Movies, TV Shows...">
-    <button class="search-button">Search</button>
+    <!-- Added ID for the search bar -->
+    <input type="text" id="search-bar" class="search-bar" placeholder="Search for Movies, TV Shows...">
+    <button class="search-button" onclick="search()">Rechercher</button>
+    <p id="errorMessage"></p>
   </div>
+  
 </body>
 <footer>
-  <p> &copy;2024 Focus Library. All rights are owned by ola chakroun and ahmed jallouli</p>
+  <p> &copy;2024 Focus Library. All rights are owned by Ola Chakroun and Ahmed Jallouli</p>
 </footer>
 </html>
+

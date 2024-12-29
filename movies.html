@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="1.css">
         <link rel="stylesheet" href="2.css">
         <link rel="stylesheet" href="3.css">
-        <script src="script.js"></script>
+        <script src="filter.js"></script>
     </head>
        <body>
        
@@ -33,68 +33,92 @@
       
         <section class="movies-section">
             <h2>Popular Movies</h2>
+            <label for="movie-filter">Filter by Genre:</label>
+            <select id="movie-filter" onchange="filterMovies()">
+                <option value="">All</option>
+                <option value="comedy">Comedy</option>
+                <option value="anime">Anime</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="masry">Masry</option>
+                <option value="tunisian">Tunisian</option>
+            </select>
             <div class="movies-container">
               <!-- Movie 1 -->
-              <div class="movie">
-                <img src="freeguy.jpg" alt="Movie 1" class="movie-poster">
+              <div class="movie"  tag="comedy">
+                <a href="free guy.html">
+                <img src="freeguy.jpg" alt="Movie 1" class="movie-poster"> </a>
                 <h3>Free Guy</h3>
               </div>
               
               <!-- Movie 2 -->
-              <div class="movie">
-                <img src="mastoul.jpg" alt="Movie 2" class="movie-poster">
-                <h3>El Eiyal Kebret</h3>
+              <div class="movie" tag="masry">
+                <a href="el eiyal herbet.html">
+                <img src="mastoul.jpg" alt="Movie 2" class="movie-poster" ></a>
+                <h3>El Eiyal Herbet</h3>
               </div>
               
               <!-- Movie 3 -->
-              <div class="movie">
-                <img src="your name.webp" alt="Movie 3" class="movie-poster">
+              <div class="movie" tag="anime">
+                <a href="your name.html">
+                <img src="your name.webp" alt="Movie 3" class="movie-poster"  ></a>
                 <h3>Your Name</h3>
               </div>
           
               <!-- Movie 4 -->
-              <div class="movie">
-                <img src="matrix.webp" alt="Movie 4" class="movie-poster">
+              <div class="movie"  tag="sci-fi">
+                <a href="the matrix.html">
+                <img src="matrix.webp" alt="Movie 4" class="movie-poster"></a>
                 <h3>The Matrix</h3>
               </div>
-              <div class="movie">
-                <img src="howls.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie" tag="anime">
+                <a href="howls moving castle.html">
+                <img src="howls.jpg" alt="Movie 4" class="movie-poster" ></a>
                 <h3>Howl's Moving Castle</h3>
               </div>
-              <div class="movie">
-                <img src="ete.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie"  tag="tunisian">
+                <a href="un ete a la goulette.html">
+                <img src="ete.jpg" alt="Movie 4" class="movie-poster"></a> 
                 <h3>Un Eté à la Goulette </h3>
               </div>
-              <div class="movie">
-                <img src="dokki.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie" tag="masry">
+                <a href="el andalib el dokki.html">
+                <img src="dokki.jpg" alt="Movie 4" class="movie-poster" ></a>
                 <h3>El Andalib el Dokki</h3>
               </div>
-              <div class="movie">
-                <img src="paprika.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie"  tag="anime">
+                <a href="paprika.html">
+
+                <img src="paprika.jpg" alt="Movie 4" class="movie-poster"></a>
                 <h3>Paprika</h3>
               </div>
-              <div class="movie">
-                <img src="interstellar.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie"  tag="sci-fi">
+                <a href="interstellar.html">
+                <img src="interstellar.jpg" alt="Movie 4" class="movie-poster"></a>
                 <h3>Interstellar</h3>
               </div>
-              <div class="movie">
-                <img src="bolice.jfif" alt="Movie 4" class="movie-poster">
+              <div class="movie" tag="tunisian">
+                <a href="bolice.html">
+                <img src="bolice.jfif" alt="Movie 4" class="movie-poster" ></a>
                 <h3>Bolice</h3>
               </div>
-              <div class="movie">
-                <img src="thedictator.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie"  tag="comedy">
+                <a href="the dictator.html"> 
+                <img src="thedictator.jpg" alt="Movie 4" class="movie-poster"></a>
                 <h3>The Dictator</h3>
               </div>
-              <div class="movie">
-                <img src="avatar.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie" tag="sci-fi">
+                <a href="avatar.html">
+                <img src="avatar.jpg" alt="Movie 4" class="movie-poster" ></a>
                 <h3>Avatar</h3>
               </div>
-              <div class="movie">
-                <img src="mrbean.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie"  tag="comedy">
+                <a href="mr bean.html" >
+                <img src="mrbean.jpg" alt="Movie 4" class="movie-poster"></a>
                 <h3>MR Beans's Holiday</h3>
               </div>
-              <div class="movie">
-                <img src="noura.jpg" alt="Movie 4" class="movie-poster">
+              <div class="movie" tag="tunisian">
+                <a href="noura.html">
+                <img src="noura.jpg" alt="Movie 4" class="movie-poster" ></a>
                 <h3>Noura's Dream</h3>
               </div>
               
