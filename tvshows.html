@@ -32,15 +32,15 @@
         </header>
         <section class="shows-section">
           <h2>Popular TV Shows</h2>
-          <label for="show-filter">Filter by Genre:</label>
-          <select id="show-filter" onchange="filterShows()">
-              <option value="">All</option>
-              <option value="comedy">Comedy</option>
-              <option value="anime">Anime</option>
-              <option value="sci-fi">Sci-Fi</option>
-              <option value="masry">Masry</option>
-              <option value="tunisian">Tunisian</option>
-          </select>
+          <div class="dropdown">
+            <button>Genre</button>
+            <div class="content">
+              <a href="#" onclick="filterShowsByGenre('anime')">Anime</a>
+              <a href="#" onclick="filterShowsByGenre('masry')">Masry</a>
+              <a href="#" onclick="filterShowsByGenre('tunisian')">Tunisian</a>
+            </div>
+          </div>
+          <br><br><br><br>
           <div class="shows-container">
             <div class="show" tag="anime">
               <a href="arcane.html"> 
@@ -49,21 +49,27 @@
               <h3>Arcane</h3>
             </div>
             <div class="show">
-              <img src="elmaestro.jpg" alt="show 2" class="movie-poster">
+              <a href="maestro.html">
+                <img src="elmaestro.jpg" alt="show 2" class="movie-poster">
+              </a>
               <h3>El Maestro</h3>
             </div>
             <div class="show" tag="tunisian">
               <a href="harka.html">
-              <img src="harka.webp" alt="show 3" class="movie-poster"></a>
+                <img src="harka.webp" alt="show 3" class="movie-poster">
+              </a>
               <h3>El Harka</h3>
             </div>
             <div class="show" tag="anime">
-              <a href="jujutsu kaisen.html" ><img src="jujutsu.webp" alt="show 4" class="movie-poster"></a>
+              <a href="jujutsu kaisen.html">
+                <img src="jujutsu.webp" alt="show 4" class="movie-poster">
+              </a>
               <h3>Jujutsu Kaisen</h3>
             </div>
             <div class="show" tag="tunisian">
               <a href="nouba.html">
-              <img src="nouba.webp" alt="show 5" class="movie-poster"></a>
+                <img src="nouba.webp" alt="show 5" class="movie-poster">
+              </a>
               <h3>El Nouba</h3>
             </div>
             <div class="show" tag="masry">
@@ -73,10 +79,14 @@
               <h3>El Oustoura</h3>
             </div>
             <div class="show" tag="anime">
-              <a href="parasyte.html"><img src="parasyte.jpg" alt="show 2" class="movie-poster"></a>
-              
+              <a href="parasyte.html">
+                <img src="parasyte.jpg" alt="show 7" class="movie-poster">
+              </a>
               <h3>Parasyte</h3>
             </div>
+          </div>
+        </section>
+        
 
 
 

@@ -33,15 +33,19 @@
       
         <section class="movies-section">
             <h2>Popular Movies</h2>
-            <label for="movie-filter">Filter by Genre:</label>
-            <select id="movie-filter" onchange="filterMovies()">
-                <option value="">All</option>
-                <option value="comedy">Comedy</option>
-                <option value="anime">Anime</option>
-                <option value="sci-fi">Sci-Fi</option>
-                <option value="masry">Masry</option>
-                <option value="tunisian">Tunisian</option>
-            </select>
+            <div class="dropdown">
+              <button>Genre</button>
+            <div class="content">
+              <a href="#" onclick="filterMoviesByGenre('comedy')">Comedy</a>
+              <a href="#" onclick="filterMoviesByGenre('anime')">Anime</a>
+              <a href="#" onclick="filterMoviesByGenre('masry')">Masry</a>
+              <a href="#" onclick="filterMoviesByGenre('sci-fi')">Sci-Fi</a>
+              <a href="#" onclick="filterMoviesByGenre('tunisian')">Tunisian</a>
+            </div>
+            </div>
+            <br>
+            <br><br><br><br>
+
             <div class="movies-container">
               <!-- Movie 1 -->
               <div class="movie"  tag="comedy">

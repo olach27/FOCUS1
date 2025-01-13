@@ -24,6 +24,10 @@ const searchData = {
   "the dictator":"the dictator.html",
   "un ete": "un ete a la goulette.html",
   "your name":"your name.html",
+  "arcane":"arcane.html",
+  "el andalib":"el andalib el dokki.html",
+  "maestro":"maestro.html",
+
   
 
 
